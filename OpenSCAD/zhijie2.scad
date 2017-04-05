@@ -7,8 +7,8 @@ cube([5,90,70]);
 
 translate([0,100,0])
 rotate(a=[0,0,30])
-translate([0,-75,0])
-cube([5,80,70]);
+translate([0,-78,0])
+cube([5,83,70]);
 
 translate([40,30.7,0])
 rotate(a=[0,0,-60])
