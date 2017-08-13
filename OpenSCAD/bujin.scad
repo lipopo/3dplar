@@ -1,0 +1,49 @@
+module bujin(){
+    difference(){
+        cube([50,40,28],center=true);
+        translate([0,-1,3])
+        cylinder(r=16,h=28,center=true);
+        translate([0,15+2-4/2-1,3])
+        cube([16,5,28],center=true);
+        translate([0,0,15-5/2])
+        cube([43,7,6],center=true);
+        translate([0,20,14-6-3])
+        cube([15,10,6],center=true);
+        translate([0,0,15-4/2])
+        cube([44,33,4],center=true);    
+    }    
+}
+module unl(){
+    difference(){
+        cube([44,40,41],center=true);
+        translate([0,0,3])
+        cube([38,34,41],center=true);
+        translate([21,7,11])
+        cube([10,15,6],center=true);
+        translate([0,0,20.5+1-4/2])
+        cube([38,100,4],center=true);
+        translate([0,0,20.5+1-4/2])
+        cube([100,34,4],center=true);    
+    }    
+}
+module lianjie(){
+    difference(){
+        cube([40,40,41],center=true);
+        translate([0,0,3])
+        cube([100,34,41],center=true);
+        translate([0,0,14.7+30/2])
+        rotate([0,-atan(13/40),0])
+        cube([100,42,30],center=true);
+        translate([0,0,14.7+4/2-4])
+        rotate([0,-atan(13/40),0])
+        cube([34,42,4],center=true);
+        translate([-5,-15,0])
+        cube([15,12,6],center=true);
+    }    
+}
+translate([-44/2-40/2,0,0])
+unl();
+rotate([0,0,180])
+lianjie();
+translate([50/2+40/2,0,-41/2+28/2])
+bujin();

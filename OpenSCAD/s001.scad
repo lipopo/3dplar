@@ -1,0 +1,27 @@
+module guding(){
+    difference(){
+        cube([50,50,50]);
+        translate([-0.5,-0.5,5])
+        cube([45.5,51,40]);
+    }
+    difference(){
+        translate([0,0,-5])
+        cube([50,50,5]);
+        translate([5,-0.5,-3])
+        cube([40,51,3]);
+        translate([10,-0.5,-5.6])
+        cube([30,51,3]);
+    }
+    {
+        translate([5,0,52])
+        cube([40,50,3]);
+        translate([10,0,50])
+        cube([30,50,2]);
+    }
+}
+translate([-25,-25,-25])
+difference(){
+    guding();
+    translate([25,25,26])
+    cylinder(h=60,r=12,center=true,$fn=10);
+}

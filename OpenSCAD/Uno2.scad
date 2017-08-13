@@ -1,0 +1,18 @@
+difference(){
+    cube([60,57,50],center=true);
+    translate([0,-2,19])
+    cube([61,56,50],center=true);
+    translate([30+31/2,-2,-1])
+    cube([60,56,50],center=true); 
+    translate([-(30+31/2),-2,-1])
+    cube([60,56,50],center=true);
+    translate([0,0,2])
+    cube([27,52,50],center=true);
+    translate([12.2+1,0,2.65])
+    cube([13,100,11],center=true);
+    translate([-18.4+1,0,2.65])
+    cube([11,100,11],center=true);
+    translate([0,3,-10])
+    rotate([90,0,0])
+    cylinder(r=6,h=55,center=true);    
+}
